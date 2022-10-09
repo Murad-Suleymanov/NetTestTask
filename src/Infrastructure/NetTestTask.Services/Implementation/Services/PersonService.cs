@@ -35,19 +35,6 @@ namespace NetTestTask.Services.Implementation.Services
 
         public async Task<ServiceResponse<string>> GetAllRequests(GetAllRequestDto model)
         {
-            Person person = new Person
-            {
-                FirstName = "Murad",
-                LastName = "Suleymanov",
-                Address = new Address
-                {
-                    City = "Baku",
-                    AddressLine = "Sebail"
-                }
-            };
-
-            var json = _jsonSerializer.Serialize(person);
-
             var data = await _personRepository.GetAllAsync(x => (!string.IsNullOrWhiteSpace(model.FirstName) ? x.FirstName == model.FirstName : true) &&
                                                                     (!string.IsNullOrWhiteSpace(model.LastName) ? x.LastName == model.LastName : true) &&
                                                                     (!string.IsNullOrWhiteSpace(model.City) ? x.Address.City == model.City : true));
