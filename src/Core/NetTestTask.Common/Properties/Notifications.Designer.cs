@@ -59,5 +59,14 @@ namespace NetTestTask.Common.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Not Found..
+        /// </summary>
+        internal static string DataNotFound {
+            get {
+                return ResourceManager.GetString("DataNotFound", resourceCulture);
+            }
+        }
     }
 }
