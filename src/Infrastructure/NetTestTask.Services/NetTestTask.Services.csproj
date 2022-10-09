@@ -7,8 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Implementation\Presentation\" />
-    <Folder Include="Implementation\Services\" />
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\NetTaskTask.Domain\NetTestTask.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\NetTestTask.Application\NetTestTask.Application.csproj" />
+    <ProjectReference Include="..\..\Core\NetTestTask.Common\NetTestTask.Common.csproj" />
+    <ProjectReference Include="..\NetTestTask.DataAccess\NetTestTask.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>

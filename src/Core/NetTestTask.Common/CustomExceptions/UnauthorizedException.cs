@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using NetTestTask.Common.Constants;
+using System.Runtime.Serialization;
 
 namespace NetTestTask.Common.CustomExceptions
 {

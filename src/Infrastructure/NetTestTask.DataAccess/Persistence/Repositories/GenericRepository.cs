@@ -171,6 +171,12 @@ namespace NetTestTask.DataAccess.Persistence.Repositories
             await _dbset.AddAsync(entity);
         }
 
+        public async Task AddWithCommitAsync(TEntity entity)
+        {
+            await _dbset.AddAsync(entity);
+            _appDbContext.SaveChanges();
+        }
+
         public Task AddRangeAsync(IEnumerable<TEntity> entities)
         {
             return _dbset.AddRangeAsync(entities);

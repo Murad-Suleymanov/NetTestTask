@@ -5,6 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 using NetTestTask.DataAccess.Abstractions;
 using NetTestTask.DataAccess.Persistence.DBContexts;
 using NetTestTask.DataAccess.Persistence.Repositories;
+using NetTestTask.Domain.Abstraction.DataAccess;
 
 namespace NetTestTask.DataAccess.Persistence.UnitOfWork
 {

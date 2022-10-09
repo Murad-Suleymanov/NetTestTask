@@ -1,4 +1,5 @@
-﻿using System.Resources;
+﻿using NetTestTask.Common.Constants;
+using System.Resources;
 
 namespace NetTestTask.Common.ResourceValues
 {
@@ -7,7 +8,7 @@ namespace NetTestTask.Common.ResourceValues
         static ResourceManager _resourceManager = null;
 
         
-        //public static string AppealMustBeInExecution => GetValues(NotificationMessageNames.AppealMustBeInExecution);
+        public static string DataNotFound => GetValues(NotificationMessageNames.DataNotFound);
 
         public static string GetValues(string key)
         {

@@ -7,7 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Mappings\" />
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\NetTestTask.DataAccess\NetTestTask.DataAccess.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\NetTestTask.Services\NetTestTask.Services.csproj" />
+    <ProjectReference Include="..\NetTestTask.Application\NetTestTask.Application.csproj" />
   </ItemGroup>
 
 </Project>

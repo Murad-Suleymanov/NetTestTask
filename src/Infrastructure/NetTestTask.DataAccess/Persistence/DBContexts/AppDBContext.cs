@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Diagnostics.CodeAnalysis;
 using NetTestTask.DataAccess.Abstractions;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using NetTestTask.Domain.Abstraction.DataAccess;
 
 namespace NetTestTask.DataAccess.Persistence.DBContexts
 {

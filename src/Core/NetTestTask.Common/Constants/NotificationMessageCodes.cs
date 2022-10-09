@@ -1,4 +1,4 @@
-﻿namespace AIBNDX.OriginCertification.Common.Constants
+﻿namespace NetTestTask.Common.Constants
 {
     public static class NotificationMessageCodes
     {

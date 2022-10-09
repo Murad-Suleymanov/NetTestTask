@@ -6,6 +6,7 @@ namespace NetTestTask.Application.Abstraction.Services
 {
     public interface IPersonService
     {
-        ServiceResponse<GenericAddingDto> CreatePerson(PersonDto model);
+        Task<ServiceResponse<long>> CreatePerson(string json);
+        Task<ServiceResponse<string>> GetAllRequests(GetAllRequestDto model);
     }
 }

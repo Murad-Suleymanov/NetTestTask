@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstraction\Presentation\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\NetTaskTask.Domain\NetTestTask.Domain.csproj" />
   </ItemGroup>
 

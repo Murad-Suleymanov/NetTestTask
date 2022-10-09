@@ -23,6 +23,8 @@ namespace NetTestTask.DataAccess.Abstractions
 
         Task AddAsync(TEntity entity);
 
+        Task AddWithCommitAsync(TEntity entity);
+
         void AddRange(IEnumerable<TEntity> entities);
 
         Task AddRangeAsync(IEnumerable<TEntity> entities);

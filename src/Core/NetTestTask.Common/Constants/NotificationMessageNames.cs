@@ -1,7 +1,7 @@
-﻿namespace AIBNDX.OriginCertification.Common.Constants
+﻿namespace NetTestTask.Common.Constants
 {
     public static class NotificationMessageNames
     {
-        //public const string AppealMustBeInExecution = "AppealMustBeInExecution";
+        public const string DataNotFound = "DataNotFound";
     }
 }

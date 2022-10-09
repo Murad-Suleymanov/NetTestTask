@@ -1,4 +1,6 @@
-﻿namespace NetTestTask.DataAccess.Abstractions
+﻿using NetTestTask.Domain.Abstraction.DataAccess;
+
+namespace NetTestTask.DataAccess.Abstractions
 {
     public interface IUnitOfWork
     {
